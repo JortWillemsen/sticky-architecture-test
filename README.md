@@ -1,0 +1,1 @@
+# sticky-architecture-test
