@@ -7,13 +7,15 @@
   "type": "module",
   "main": "dist/src/index.js",
   "module": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "exports": {
-    ".": "./dist/src/index.js"
+    ".": "./dist/src/index.js",
+    "./css": "./dist/index.css"
   },
   "scripts": {
     "analyze": "cem analyze --litelement",
     "start": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"web-dev-server\"",
-    "build": "tsc && npm run analyze -- --exclude dist",
+    "build": "sass src/lib/styles/index.scss dist/index.css --style=compressed && tsc && npm run analyze -- --exclude dist",
     "prepublish": "tsc && npm run analyze -- --exclude dist"
   },
   "dependencies": {
@@ -23,6 +25,7 @@
     "@custom-elements-manifest/analyzer": "^0.10.3",
     "@web/dev-server": "^0.4.6",
     "concurrently": "^8.2.2",
+    "sass": "^1.94.2",
     "tslib": "^2.6.3",
     "typescript": "^5.5.3"
   },

@@ -1,0 +1,15 @@
+@use "extra.scss";
+
+:root {
+  --board-primary: #fa6b20;
+  --board-bg: #ffffff;
+  --board-text: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --board-primary: green;
+    --board-bg: #121212;
+    --board-text: #f2f2f2;
+  }
+}

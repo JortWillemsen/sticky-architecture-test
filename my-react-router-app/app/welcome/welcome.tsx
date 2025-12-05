@@ -1,5 +1,14 @@
+import { SeButton as SeButtonWC } from "sticky-elements";
 import logoDark from "./logo-dark.svg";
 import logoLight from "./logo-light.svg";
+import { createComponent } from "@lit/react";
+import React from "react";
+
+const SeButton = createComponent({
+  react: React,
+  tagName: "se-button",
+  elementClass: SeButtonWC,
+});
 
 export function Welcome() {
   return (
@@ -24,6 +33,9 @@ export function Welcome() {
             <p className="leading-6 text-gray-700 dark:text-gray-200 text-center">
               What&apos;s next?
             </p>
+
+            <SeButton onClick={() => {}} />
+
             <ul>
               {resources.map(({ href, text, icon }) => (
                 <li key={href}>
