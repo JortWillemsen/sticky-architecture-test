@@ -1,30 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-GB">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <style>
-    body {
-      background: #fafafa;
-    }
-  </style>
-</head>
-<body>
-  <div id="demo"></div>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <style>
+      body {
+        background: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="demo"></div>
 
-  <script type="module">
-    import { html, render } from 'lit';
-    import '../dist/src/sticky-elements.js';
+    <script type="module">
+      import { html, render } from "lit";
+      import "../dist/src/index.js";
 
-    const header = 'Hello owc World!';
-    render(
-      html`
-        <sticky-elements .header=${header}>
-          some light-dom
-        </sticky-elements>
-      `,
-      document.querySelector('#demo')
-    );
-  </script>
-</body>
+      const header = "Hello owc World!";
+      render(html` <se-button></se-button> `, document.querySelector("#demo"));
+    </script>
+  </body>
 </html>

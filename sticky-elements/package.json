@@ -8,8 +8,7 @@
   "main": "dist/src/index.js",
   "module": "dist/src/index.js",
   "exports": {
-    ".": "./dist/src/index.js",
-    "./sticky-elements.js": "./dist/src/sticky-elements.js"
+    ".": "./dist/src/index.js"
   },
   "scripts": {
     "analyze": "cem analyze --litelement",
