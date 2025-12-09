@@ -9,6 +9,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.16.4"
+    "@lit/context": "^1.1.6",
+    "@semantic-ui/astro-lit": "^5.1.1",
+    "astro": "^5.16.4",
+    "sticky-elements": "file:../sticky-elements"
   }
 }
